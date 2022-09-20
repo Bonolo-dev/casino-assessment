@@ -1,0 +1,17 @@
+INSERT INTO player_entity(username,balance) VALUES ('Ben',5000);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',2910,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WIN',29000,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',9210,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WIN',29971,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',300,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',310,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WIN',30,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',42,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WIN',290,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WIN',2981,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',29,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WIN',92,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',112,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',70,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',89,1);
+INSERT INTO transactions_entity(transaction_type,amount,player_id) VALUES ('WAGER',298,1);

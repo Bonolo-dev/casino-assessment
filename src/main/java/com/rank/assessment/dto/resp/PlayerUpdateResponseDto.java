@@ -1,16 +1,17 @@
 package com.rank.assessment.dto.resp;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class PlayerUpdateResponseDto {
-    private BigDecimal transactionId;
+    private BigInteger transactionId;
     private BigDecimal balance;
 
-    public BigDecimal getTransactionId() {
+    public BigInteger getTransactionId() {
         return transactionId;
     }
 
-    public void setTransactionId(BigDecimal transactionId) {
+    public void setTransactionId(BigInteger transactionId) {
         this.transactionId = transactionId;
     }
 
@@ -22,7 +23,7 @@ public class PlayerUpdateResponseDto {
         this.balance = balance;
     }
 
-    public PlayerUpdateResponseDto(BigDecimal transactionId, BigDecimal balance) {
+    public PlayerUpdateResponseDto(BigInteger transactionId, BigDecimal balance) {
         this.transactionId = transactionId;
         this.balance = balance;
     }

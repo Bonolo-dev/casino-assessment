@@ -1,6 +1,7 @@
 package com.rank.assessment.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.rank.assessment.dto.req.GetTransactionsDto;
 import com.rank.assessment.dto.req.PlayerUpdateDto;
 import com.rank.assessment.dto.resp.LastDecaTransactionsDto;
 import com.rank.assessment.dto.resp.PlayerBalanceDto;
@@ -29,15 +30,15 @@ public class CasinoController{
     }
 
     @RequestMapping(value = "/player/{playerid}/balance/update", method = RequestMethod.POST, produces="application/json")
-    public ResponseEntity<?> updatePlayerBalance(@PathVariable int playerid, @RequestBody PlayerUpdateDto updates) {
+    public ResponseEntity<?> updatePlayerBalance(@PathVariable int playerid, @RequestBody PlayerUpdateDto updates) throws Exception {
 
         PlayerUpdateResponseDto response = casinoService.updatePlayerBalance(updates);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
     @RequestMapping(value = "/admin/player/transaction", method = RequestMethod.POST, produces="application/json")
-    public ResponseEntity<?> lastDecaTransactions(@RequestBody String username) {
-        List<LastDecaTransactionsDto> transactions = casinoService.getLastDecaTransactions(username);
+    public ResponseEntity<?> lastDecaTransactions(@RequestBody GetTransactionsDto user) {
+        List<LastDecaTransactionsDto> transactions = casinoService.getLastDecaTransactions(user.getUsername());
         return ResponseEntity.status(HttpStatus.OK).body(transactions);
     }
 
